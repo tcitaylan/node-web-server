@@ -29,9 +29,9 @@ app.use((req, res, next)=>{
     next();
 });
 
-app.use((req,res)=>{
-    res.render('maintenance.hbs');
-})
+// app.use((req,res)=>{
+//     res.render('maintenance.hbs');
+// });
 app.use(express.static(__dirname + '/public'));
 hbs.registerHelper('getCurrentYear',()=>{
     return new Date().getFullYear();
